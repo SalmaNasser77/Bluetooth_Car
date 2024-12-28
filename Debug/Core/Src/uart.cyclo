@@ -1,0 +1,10 @@
+../Core/Src/uart.cpp:14:1:Uart::Uart(uint32_t)	2
+../Core/Src/uart.cpp:32:7:static void* Uart::operator new(size_t, UsartInstance)	1
+../Core/Src/uart.cpp:37:6:void Uart::IntitalizeUart1(uint32_t)	1
+../Core/Src/uart.cpp:46:6:void Uart::setUart1_bins()	1
+../Core/Src/uart.cpp:55:6:void Uart::setUart1_mode_fullduplex()	1
+../Core/Src/uart.cpp:60:6:void Uart::setUart1_baudrate(uint32_t)	1
+../Core/Src/uart.cpp:65:6:void Uart::EnableUart1()	1
+../Core/Src/uart.cpp:73:6:void Uart::sendString(char*)	2
+../Core/Src/uart.cpp:83:6:char Uart::UartRead()	2
+../Core/Src/uart.cpp:89:6:void Uart::SendChar(char)	2

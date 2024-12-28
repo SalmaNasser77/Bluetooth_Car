@@ -1,0 +1,5 @@
+../Core/Src/Motor.cpp:10:1:Motor::Motor(Motor_bin)	1
+../Core/Src/Motor.cpp:17:6:void Motor::MoveClockwise()	1
+../Core/Src/Motor.cpp:24:6:void Motor::MoveAntiClockwise()	1
+../Core/Src/Motor.cpp:31:6:void Motor::Stop()	1
+../Core/Src/Motor.cpp:38:1:Motor::~Motor()	4
