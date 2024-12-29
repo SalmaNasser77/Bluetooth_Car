@@ -5,7 +5,7 @@
  *      Author: roboticscorner
  */
 
-#include <GPIO/Input.h>
+#include "GPIO/Input.h"
 
 
 Input::Input(GPIO_TypeDef * GPIO, uint8_t pin, INPUT_MODES MODE_P):GPIO_Base(GPIO, pin), MODE(static_cast<uint32_t>(MODE_P))

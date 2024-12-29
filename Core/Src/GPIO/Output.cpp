@@ -5,7 +5,7 @@
  *      Author: roboticscorner
  */
 
-#include <GPIO/Output.h>
+#include "GPIO/Output.h"
 
 
 Output::Output(GPIO_TypeDef * GPIO, uint8_t pin, OUTPUT_MODES MODE_P):GPIO_Base(GPIO, pin), MODE(static_cast<uint32_t>(MODE_P))

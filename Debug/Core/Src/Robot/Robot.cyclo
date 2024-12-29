@@ -1,0 +1,6 @@
+../Core/Src/Robot/Robot.cpp:9:1:Robot::Robot(Motor&, Motor&, Motor&, Motor&)	1
+../Core/Src/Robot/Robot.cpp:17:6:void Robot::moveForward()	1
+../Core/Src/Robot/Robot.cpp:26:6:void Robot::moveBackward()	1
+../Core/Src/Robot/Robot.cpp:35:6:void Robot::turnLeft()	1
+../Core/Src/Robot/Robot.cpp:44:6:void Robot::turnRight()	1
+../Core/Src/Robot/Robot.cpp:53:6:void Robot::Stop()	1

@@ -35,7 +35,6 @@ enum UsartInstance
 };
 
 #define F_OSC    	8000000
-#define BAUDRATE 	9600
 
 class Uart
 {

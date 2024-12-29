@@ -5,9 +5,9 @@
  *      Author: roboticscorner
  */
 
-#include <Bluetooth/Uart.h>
-#include <GPIO/Input.h>
-#include <GPIO/Output.h>
+#include "Bluetooth/Uart.h"
+#include "GPIO/Input.h"
+#include "GPIO/Output.h"
 
 
 
@@ -54,7 +54,7 @@ void Uart::setUart1_bins()
 
 void Uart::setUart1_mode_fullduplex()
 {
-	this->CR1 = (1 << UART1_RX_Enable_Bin) | (1 << UART1_TX_Enable_Bin);  // Enable Recieve and Transmit
+	this->CR1 |= (1 << UART1_RX_Enable_Bin) | (1 << UART1_TX_Enable_Bin);  // Enable Recieve and Transmit
 }
 
 void Uart::setUart1_baudrate(uint32_t baudrate)

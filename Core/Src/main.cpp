@@ -1,6 +1,6 @@
-#include <Bluetooth/Uart.h>
-#include <GPIO/Input.h>
-#include <GPIO/Output.h>
+#include "Bluetooth/Uart.h"
+#include "GPIO/Input.h"
+#include "GPIO/Output.h"
 #include "main.h"
 #include "Motor/Motor.h"
 #include "Robot/Robot.h"
@@ -12,8 +12,6 @@ extern Motor_bin Back_Left_motor_bins;
 extern Motor_bin Front_Right_motor_bins;
 extern Motor_bin Back_Right_motor_bins;
 
-Uart* blu = new (Usart1Instance) Uart(9600);
-
 
 int main()
 {
@@ -21,6 +19,8 @@ int main()
 	Enable_APB2_Peripheral(GPIOA_ID);
 	Enable_APB2_Peripheral(GPIOB_ID);
 	Enable_APB2_Peripheral(UART1_ID);
+
+	Uart* blu = new (Usart1Instance) Uart(9600);
 
 
 	// Initializing the motors with the specific bins
