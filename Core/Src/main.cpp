@@ -5,6 +5,7 @@
 #include "Motor/Motor.h"
 #include "Robot/Robot.h"
 #include "RCC_Peripheral_Enable/RCC_Peripheral_Enable.h"
+#include "SysTick/SysTick.h"
 
 
 extern Motor_bin Front_Left_motor_bins;
@@ -32,12 +33,15 @@ int main()
 	// Initializing the car
 	Robot My_car(Front_Left_motor, Back_Left_motor,
 				 Front_Right_motor, Back_Right_motor);
+
+	DelayInit();
 	while(1)
 	{
 
 		char ch = blu->UartRead();
 		if(ch == 'F')
 		{
+			Delay(5000);
 			My_car.moveForward();
 		}
 		else if(ch == 'S' || ch == 'C')

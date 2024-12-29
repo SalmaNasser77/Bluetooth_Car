@@ -44,6 +44,7 @@ Core/Src/GPIO \
 Core/Src/Motor \
 Core/Src/RCC_Peripheral_Enable \
 Core/Src/Robot \
+Core/Src/SysTick \
 Core/Src \
 Core/Startup \
 Drivers/STM32F1xx_HAL_Driver/Src \
