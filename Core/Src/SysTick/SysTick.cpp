@@ -27,7 +27,7 @@ void Delay(uint32_t ms_delay)
 	while(Ticks);
 }
 
-void SysTick_Handler()
+void SysTick_Handler(void)
 {
 	if(Ticks > 0)
 	{
@@ -37,7 +37,9 @@ void SysTick_Handler()
 
 void SysTick_Init()
 {
-	SysTick->LOAD = OSC / Milis_In_Sec;
+	SysTick->LOAD = (OSC / Milis_In_Sec)-1;
+
+	SysTick->VAL = 0;
 
 	SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
 
